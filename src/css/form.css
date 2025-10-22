@@ -1,0 +1,153 @@
+.form {
+  display: flex;
+  margin-top: 36px;
+  width: 372px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form input {
+  width: 272px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #4e75ff;
+  border-radius: 4px;
+  padding-left: 16px;
+  transition: border-color 2s ease;
+}
+
+.form input:placeholder-shown {
+  border-color: #808080;
+}
+
+.form input:hover {
+  border-color: #000;
+}
+.btn-search {
+  width: 92px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 2s ease;
+}
+
+.btn-search:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 360px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-link {
+  display: flex;
+  height: 200px;
+  margin-bottom: 4px;
+}
+
+.container-description-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.description-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-label::first-letter {
+  text-transform: capitalize;
+}
+
+.img-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.img-value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  background: #ff3d00;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotationBack 1s ease-in-out infinite reverse;
+}
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #ff3d00;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+body:has(.simple-lightbox) {
+  overflow: hidden;
+}
