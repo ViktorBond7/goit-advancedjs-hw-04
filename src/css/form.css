@@ -151,3 +151,14 @@
 body:has(.simple-lightbox) {
   overflow: hidden;
 }
+
+.js-load-more {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.is-hiden {
+  display: none;
+}
