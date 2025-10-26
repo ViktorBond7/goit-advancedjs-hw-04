@@ -43,6 +43,8 @@ const onFormSearchSubmit = async e => {
       });
       refs.listImg.innerHTML = '';
       refs.formSearch.reset();
+      refs.loadMore.classList.add('is-hiden');
+
       return;
     }
 
