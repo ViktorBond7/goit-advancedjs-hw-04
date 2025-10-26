@@ -4,12 +4,12 @@ import iziToast from 'izitoast';
 const API_KEY = '41712066-bd7b5e249df7a86bd45ef70ea';
 const BASE_URL = 'https://pixabay.com/api/';
 
-const BASE_PARAMS = {
+export const BASE_PARAMS = {
   key: API_KEY,
   image_type: 'photo',
   orientation: 'horizontal',
   safesearch: true,
-  per_page: 30,
+  per_page: 15,
 };
 
 export const fetchImages = async (query, page = 1) => {

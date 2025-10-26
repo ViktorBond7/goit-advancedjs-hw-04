@@ -157,6 +157,7 @@ body:has(.simple-lightbox) {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 32px;
 }
 
 .is-hiden {
